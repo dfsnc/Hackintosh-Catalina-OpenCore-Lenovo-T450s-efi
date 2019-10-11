@@ -4,7 +4,7 @@
 
 ## Introduction
 
-efi for Thinkpad T450s Hackintosh Catalina.
+efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.
 
 ![pic.jpg](pic.jpg)
 

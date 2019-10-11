@@ -6,7 +6,7 @@
 
 efi for Thinkpad T450s Hackintosh Catalina.
 
-![pic.jpg](/Users/echo/Desktop/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi/pic.jpg)
+![pic.jpg](pic.jpg)
 
 CPU: i5-5200U
 

@@ -47,5 +47,5 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - Sidecar (Broadwell doesn't support sidecar)
 - Redpoint (I never use this...)
 - SD Card Reader
-- DV (Untested)
+- VGA (Untested)
 - miniDP (Untested)

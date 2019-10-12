@@ -110,6 +110,14 @@
 				<key>Path</key>
 				<string>SSDT-EXT4-WakeScreen.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable Nvidia GPU</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DDGP.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -1090,7 +1098,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 darkwake=10 -hbfx-dump-nvram -wegnoegpu applbkl=1</string>
+				<string>-v debug=0x100 keepsyms=1 darkwake=10 -hbfx-dump-nvram applbkl=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>nvda_drv</key>

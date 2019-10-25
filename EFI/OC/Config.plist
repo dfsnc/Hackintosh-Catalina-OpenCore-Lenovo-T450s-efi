@@ -1270,7 +1270,7 @@
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
-			<false/>
+			<true/>
 			<key>ExposeSensitiveData</key>
 			<integer>2</integer>
 			<key>HaltLevel</key>
@@ -1409,7 +1409,7 @@
 		<key>Drivers</key>
 		<array>
 			<string>ApfsDriverLoader.efi</string>
-			<string>VBoxHfs.efi</string>
+			<string>HFSPlus.efi</string>
 			<string>VirtualSmc.efi</string>
 			<string>FwRuntimeServices.efi</string>
 			<string>UsbKbDxe.efi</string>
@@ -1461,7 +1461,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidHighAlloc</key>
-			<false/>
+			<true/>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>

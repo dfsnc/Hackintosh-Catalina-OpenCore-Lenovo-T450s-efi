@@ -1,12 +1,10 @@
 # Thinkpad T450s Catalina
 
-## 
-
 ## Introduction
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.
 
-![pic.jpg](pic.jpg)
+![About](Images/About.jpg)
 
 CPU: i5-5200U
 

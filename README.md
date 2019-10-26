@@ -38,12 +38,12 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - USB 2.0 / USB 3.0
 - Battery
 - Touchpad
+- Redpoint
 - Use [one-key-hidpi](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/one-key-hidpi) to enable HiDPI
 
 ## What doesn't work
 
 - Sidecar (Broadwell doesn't support sidecar)
-- Redpoint (I never use this...)
 - SD Card Reader
 - VGA (Untested)
 - miniDP (Untested)

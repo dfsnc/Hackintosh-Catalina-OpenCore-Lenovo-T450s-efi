@@ -118,6 +118,14 @@
 				<key>Path</key>
 				<string>SSDT-DDGP.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Clickpad</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-Thinkpad_Clickpad.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>

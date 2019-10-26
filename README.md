@@ -37,7 +37,9 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - TRIM
 - USB 2.0 / USB 3.0
 - Battery
-- Touchpad
+- Touchpad:
+    Default ApplePS2Controller is the one from [Rehabman](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller), it support those three buttons on the touchpad, but doesn't support three finger gestures.
+    If you wanna use three finger gesture, and you don't care about those buttons, you can replace ApplePS2Controller with this one from [acidanthera](https://github.com/acidanthera/VoodooPS2).
 - Redpoint
 - Use [one-key-hidpi](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/one-key-hidpi) to enable HiDPI
 

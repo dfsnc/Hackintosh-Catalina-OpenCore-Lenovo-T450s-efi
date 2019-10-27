@@ -121,7 +121,7 @@
 			<key>VoodooHDAEnableHalfMicVolumeFix</key>
 			<false/>
 			<key>VoodooHDAEnableHalfVolumeFix</key>
-			<false/>
+			<true/>
 			<key>VoodooHDAEnableMuteFix</key>
 			<false/>
 			<key>VoodooHDAEnableVolumeChangeFix</key>

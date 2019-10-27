@@ -1,5 +1,7 @@
 # Thinkpad T450s Catalina
 
+## Notice: If you need to edit config.plist, don't use OpenCore configurator, use PlistEdit pro or Xcode instead.
+
 ## Introduction
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.
@@ -42,6 +44,7 @@ Wireless Card: **BCM94360CD 4 antennas.**
     If you wanna use three finger gesture, and you don't care about those buttons, you can replace ApplePS2Controller with this one from [acidanthera](https://github.com/acidanthera/VoodooPS2).
 - Redpoint
 - Use [one-key-hidpi](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/one-key-hidpi) to enable HiDPI
+- If you are using a usb mouse with side buttons, you can spoof apple usb mouse by change the pid and vid in AnyAppleUSBMouse.kext/Info.plist and enable it in config.plist.
 
 ## What doesn't work
 

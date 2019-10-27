@@ -1,5 +1,7 @@
 # Thinkpad T450s Catalina
 
+## Notice: If you need to edit config.plist, don't use OpenCore configurator, use PlistEdit pro or Xcode instead.
+
 ## Introduction
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.

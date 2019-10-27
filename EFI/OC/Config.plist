@@ -1050,6 +1050,15 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+      <dict>
+        <string>Sinetek-rtsx.kext</string>
+				<key>Comment</key>
+				<string>Card Reader</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/Sinetek-rtsx</string>
+      </dict>
 		</array>
 		<key>Block</key>
 		<array>

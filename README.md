@@ -49,5 +49,5 @@ Wireless Card: **BCM94360CD 4 antennas.**
 ## What doesn't work
 
 - Sidecar (Broadwell doesn't support sidecar)
-- VGA (Untested)
+- VGA
 - miniDP (Untested)

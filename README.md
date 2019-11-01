@@ -36,12 +36,13 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store (Change Config.plist -> PlatformInfo -> Generic -> MLB and SystemSerialNumber)
 - Ethernet
-- Onboard audio (Using VoodooHDA. For AppleALC, layout-id: 32, Use [ALCPlugFix](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/ALCPlugFix) to fix unworking jack after replug )
+- Onboard audio (Using VoodooHDA. For AppleALC, layout-id: 32, Use [ALCPlugFix](https://github.com/Sniki/ALCPlugFix) to fix unworking jack after replug )
 - TRIM
 - USB 2.0 / USB 3.0
 - Battery
 - Touchpad
 - Redpoint
+- miniDP
 - SD Card Reader (Thanks to @willmav5000)
 - Use [one-key-hidpi](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/one-key-hidpi) to enable HiDPI
 - If you are using a usb mouse with side buttons, you can spoof apple usb mouse by change the pid and vid in AnyAppleUSBMouse.kext/Info.plist and enable it in config.plist.
@@ -50,4 +51,3 @@ Wireless Card: **BCM94360CD 4 antennas.**
 
 - Sidecar (Broadwell doesn't support sidecar)
 - VGA
-- miniDP (Untested)

@@ -6,8 +6,6 @@
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.
 
-![About](Images/About.jpg)
-
 CPU: i5-5200U
 
 Integrated Graphics: HD Graphics 5500

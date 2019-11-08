@@ -21,7 +21,6 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - `Security -> Security Chip`: **Disabled**;
 - `Memory Protection -> Execution Prevention`: **Enabled**;
 - `Virtualization -> Intel Virtualization Technology`: **Enabled**;
-- `Virtualization -> Intel Vt-d Feature`: **Disabled**;
 - `Internal Device Access -> Bottom Cover Tamper Detection`: must be **Disabled**;
 - `Anti-Theft -> Current Setting`: **Disabled**;
 - `Anti-Theft -> Computrace -> Current Setting`: **Disabled**;

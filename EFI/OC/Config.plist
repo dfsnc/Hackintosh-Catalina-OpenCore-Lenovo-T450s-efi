@@ -1059,13 +1059,29 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooHDA.kext</string>
+				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string>Sound</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooHDA</string>
+				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>CodecCommander.kext</string>
+				<key>Comment</key>
+				<string>CodecCommander</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CodecCommander</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1082,22 +1098,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausi</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>HibernationFixup.kext</string>
-				<key>Comment</key>
-				<string>Hibernation</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/HibernationFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1160,7 +1160,7 @@
 				<key>Comment</key>
 				<string>...Fix AppleALC (kind of)</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleHPET</string>
 				<key>MaxKernel</key>
@@ -1336,7 +1336,7 @@
 			<key>PanicNoKextDump</key>
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
-			<false/>
+			<true/>
 			<key>ThirdPartyTrim</key>
 			<true/>
 			<key>XhciPortLimit</key>
@@ -1356,7 +1356,7 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>None</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
@@ -1453,7 +1453,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1</string>
+				<string>-v debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1 -alcdbg -alcbeta -lilubeta alcid=32</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
@@ -1517,7 +1517,7 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookPro12,1</string>
+			<string>MacBookAir7,2</string>
 			<key>SystemSerialNumber</key>
 			<string>W0000000001</string>
 			<key>SystemUUID</key>
@@ -1576,7 +1576,7 @@
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
-			<true/>
+			<false/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>

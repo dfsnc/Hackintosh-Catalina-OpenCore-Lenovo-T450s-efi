@@ -35,7 +35,7 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store (Change Config.plist -> PlatformInfo -> Generic -> MLB and SystemSerialNumber)
 - Ethernet
-- Onboard audio (Using VoodooHDA. For AppleALC, layout-id: 32, Use [ALCPlugFix](https://github.com/Sniki/ALCPlugFix) to fix unworking jack after replug )
+- Onboard audio (Use alc_fix to fix unworking jack after replug )
 - TRIM
 - USB 2.0 / USB 3.0
 - Battery

@@ -6,8 +6,6 @@
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.
 
-![About](Images/About.jpg)
-
 CPU: i5-5200U
 
 Integrated Graphics: HD Graphics 5500
@@ -21,7 +19,6 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - `Security -> Security Chip`: **Disabled**;
 - `Memory Protection -> Execution Prevention`: **Enabled**;
 - `Virtualization -> Intel Virtualization Technology`: **Enabled**;
-- `Virtualization -> Intel Vt-d Feature`: **Disabled**;
 - `Internal Device Access -> Bottom Cover Tamper Detection`: must be **Disabled**;
 - `Anti-Theft -> Current Setting`: **Disabled**;
 - `Anti-Theft -> Computrace -> Current Setting`: **Disabled**;
@@ -36,7 +33,7 @@ Wireless Card: **BCM94360CD 4 antennas.**
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store (Change Config.plist -> PlatformInfo -> Generic -> MLB and SystemSerialNumber)
 - Ethernet
-- Onboard audio (Using VoodooHDA. For AppleALC, layout-id: 32, Use [ALCPlugFix](https://github.com/Sniki/ALCPlugFix) to fix unworking jack after replug )
+- Onboard audio (Use alc_fix to fix unworking jack after replug )
 - TRIM
 - USB 2.0 / USB 3.0
 - Battery

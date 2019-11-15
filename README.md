@@ -1,3 +1,7 @@
+This is a fork from the talented EchoEsprit. Most of the changes are around trim in config and external wifi kexts (realtek)
+
+
+
 # Thinkpad T450s Catalina
 
 ## Notice: If you need to edit config.plist, don't use OpenCore configurator, use PlistEdit pro or Xcode instead.

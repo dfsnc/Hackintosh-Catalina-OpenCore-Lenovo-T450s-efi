@@ -16,6 +16,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>EH01</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EH01.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>XHC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-XHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Backlight, with Whatevergreen applbkl=1</string>
 				<key>Enabled</key>
 				<true/>
@@ -116,7 +132,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DDGP.aml</string>
+				<string>SSDT-DDGPU.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -131,6 +147,42 @@
 		<array/>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>_UPC to XUPC(all)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				X1VQQw==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAAAAAAA=
+				</data>
+				<key>Replace</key>
+				<data>
+				WFVQQw==
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>battery BAT0:GBIF03 to XBIF03</string>
@@ -668,6 +720,25 @@
 	</dict>
 	<key>Booter</key>
 	<dict>
+		<key>MmioWhitelist</key>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>4275159040</integer>
+				<key>Comment</key>
+				<string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4278190080</integer>
+				<key>Comment</key>
+				<string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -956,13 +1027,61 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooHDA.kext</string>
+				<string>CPUFriend.kext</string>
 				<key>Comment</key>
-				<string>Sound</string>
+				<string>CPUFriend</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooHDA</string>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>Comment</key>
+				<string>CPUFriendDataProvider</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>AppleALC.kext</string>
+				<key>Comment</key>
+				<string>AppleALC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>CodecCommander.kext</string>
+				<key>Comment</key>
+				<string>CodecCommander</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CodecCommander</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -988,29 +1107,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
+				<string>AnyAppleUSBMouse.kext</string>
 				<key>Comment</key>
-				<string>USB</string>
+				<string>Apple Mouse Spoof</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>HibernationFixup.kext</string>
-				<key>Comment</key>
-				<string>Hibernation</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/HibernationFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1025,22 +1128,6 @@
 				<string>Apple Camera Spoof</string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>AnyAppleUSBMouse.kext</string>
-				<key>Comment</key>
-				<string>Apple Mouse Spoof</string>
-				<key>Enabled</key>
-				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -1070,7 +1157,7 @@
 				<key>BundlePath</key>
 				<string>RtWlanU.kext</string>
 				<key>Comment</key>
-				<string>Realtek Wi-Fi Kext (USB Wifi)</string>
+				<string>RtWlanU</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1086,7 +1173,7 @@
 				<key>BundlePath</key>
 				<string>RtWlanU1827.kext</string>
 				<key>Comment</key>
-				<string>Realtek Wi-Fi Kext (USB Wifi)</string>
+				<string>RtWlanU1827</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1103,31 +1190,15 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>...Fix AppleALC (kind of)</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Identifier</key>
-				<string>com.apple.driver.AppleTyMCEDriver</string>
+				<string>com.apple.driver.AppleHPET</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelLpssI2C</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelLpssI2CController</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -1289,15 +1360,17 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<false/>
+			<true/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>LapicKernelPanic</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
-			<key>ThirdPartyTrim</key>
+			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ThirdPartyTrim</key>
+			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
@@ -1315,13 +1388,13 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>None</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
-			<true/>
+			<false/>
 			<key>Resolution</key>
-			<string></string>
+			<string>1600×900@60</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
@@ -1332,7 +1405,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -1412,7 +1485,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1</string>
+				<string>-v debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1 -alcdbg -alcbeta -lilubeta alcid=32</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
@@ -1422,6 +1495,7 @@
 				</data>
 				<key>prev-lang:kbd</key>
 				<data>
+				emgtSGFuczoyNTI=
 				</data>
 			</dict>
 		</dict>
@@ -1467,19 +1541,18 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>M000000000001</string>
+			<string>ENTERYOUROWN</string>
 			<key>ROM</key>
 			<data>
-			ESIzAAAA
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookPro12,1</string>
+			<string>MacBookAir7,2</string>
 			<key>SystemSerialNumber</key>
-			<string>W0000000001</string>
+			<string>ENTERYOUROWN</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>ENTERYOUROWN</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1509,7 +1582,7 @@
 			<key>KeyMergeThreshold</key>
 			<integer>2</integer>
 			<key>KeySupport</key>
-			<true/>
+			<false/>
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>
@@ -1517,7 +1590,7 @@
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
-			<string>ASUS</string>
+			<string></string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
@@ -1534,7 +1607,7 @@
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
-			<false/>
+			<true/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
@@ -1557,15 +1630,17 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<true/>
 			<key>IgnoreTextInGraphics</key>
-			<false/>
+			<true/>
 			<key>ProvideConsoleGop</key>
 			<true/>
+			<key>ReconnectOnResChange</key>
+			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<false/>
+			<true/>
 			<key>SanitiseClearScreen</key>
 			<true/>
 		</dict>

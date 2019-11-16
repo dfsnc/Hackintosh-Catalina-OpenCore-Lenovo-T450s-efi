@@ -1338,7 +1338,7 @@
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
 			<key>ThirdPartyTrim</key>
-			<true/>
+			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
@@ -1452,6 +1452,10 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>EnableTRIM</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>boot-args</key>
 				<string>-v debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1 -alcdbg -alcbeta -lilubeta alcid=32</string>
 				<key>csr-active-config</key>

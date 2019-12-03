@@ -34,7 +34,6 @@ Wireless Card: **BCM94360CD 4 antennas.(Switched to DW1820A 00JT494, Works under
 - iMessage, FaceTime, App Store, iTunes Store (Change Config.plist -> PlatformInfo -> Generic -> MLB and SystemSerialNumber)
 - Ethernet
 - Onboard audio (Use alc_fix to fix unworking jack after replug )
-- TRIM
 - USB 2.0 / USB 3.0
 - Battery
 - Touchpad

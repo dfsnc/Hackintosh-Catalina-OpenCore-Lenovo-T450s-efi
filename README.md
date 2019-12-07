@@ -12,7 +12,7 @@ Integrated Graphics: HD Graphics 5500
 
 Sound Card: ALC292
 
-Wireless Card: **BCM94360CD 4 antennas.**
+Wireless Card: **BCM94360CD 4 antennas.(Switched to DW1820A 00JT494, Works under Win10 and macOS.)** 
 
 ## Bios
 
@@ -29,22 +29,21 @@ Wireless Card: **BCM94360CD 4 antennas.**
 ## What works
 
 - Sleep / Wake
-- Wifi and Bluetooth (BCM94360CD)
+- Wifi and Bluetooth (DW1820A)
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store (Change Config.plist -> PlatformInfo -> Generic -> MLB and SystemSerialNumber)
 - Ethernet
 - Onboard audio (Use alc_fix to fix unworking jack after replug )
-- TRIM
 - USB 2.0 / USB 3.0
 - Battery
 - Touchpad
 - Redpoint
 - miniDP
+- Sidecar (Wireless mode doesn't work)
 - SD Card Reader (Thanks to @willmav5000)
 - Use [one-key-hidpi](https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/one-key-hidpi) to enable HiDPI
 - If you are using a usb mouse with side buttons, you can spoof apple usb mouse by change the pid and vid in AnyAppleUSBMouse.kext/Info.plist and enable it in config.plist.
 
 ## What doesn't work
 
-- Sidecar (Broadwell doesn't support sidecar)
 - VGA

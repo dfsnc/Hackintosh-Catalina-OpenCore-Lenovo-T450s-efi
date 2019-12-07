@@ -868,7 +868,9 @@
 				<key>hda-idle-support</key>
 				<string>1</string>
 				<key>layout-id</key>
-				<integer>32</integer>
+				<data>
+				IAAAAA==
+				</data>
 				<key>model</key>
 				<string>Intel Wildcat Point-LP High Definition Audio Controller</string>
 				<key>name</key>

@@ -150,6 +150,14 @@
 				<key>Path</key>
 				<string>SSDT-Thinkpad_Clickpad.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable PCI Card Reader</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-PCI0.EXP1-Disbale.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>

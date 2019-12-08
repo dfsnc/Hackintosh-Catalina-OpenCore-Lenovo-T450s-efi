@@ -888,8 +888,6 @@
 				<data>
 				FhYAAA==
 				</data>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
@@ -938,6 +936,8 @@
 				<data>
 				AAAAgA==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
 				<string>HD Graphics 5500</string>
 				<key>name</key>
@@ -1576,7 +1576,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 darkwake=0 applbkl=1</string>
+				<string>-v debug=0x100 keepsyms=1 darkwake=0</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==

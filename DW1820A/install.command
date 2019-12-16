@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd "${0%/*}"
-open AddDW1820A.app
 sudo mount -uw /
 sudo rm -r /System/Library/Extensions/IO80211Family.kext
 sudo rm -r /System/Library/Extensions/IOBluetoothFamily.kext

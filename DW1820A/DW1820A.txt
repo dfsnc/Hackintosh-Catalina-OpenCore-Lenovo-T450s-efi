@@ -2,23 +2,3 @@ DW1820A:    00JT494 (Lenovo)
 WiFi:       pci14e4,43a3
 bluetooth:  0a5c:6414
 
-I've found out that using BrcmBluetoothInjector.kext inject bluetooth id will cause bluetooth unstable and unable to connect devices. And inject wifi id might also cause wifi no speed. It may look like drivers has been correctly loaded, but they just won't work.
-
-The only way to make wifi and bluetooth work perfectly seems to be modify IO80211Family.kext and IOBluetoothFamily.kext, So I made this app to automatically modify and backup your IO80211Family.kext and IOBluetoothFamily.kext, I've only tested this on my computer, and it works fine.
-
-Execute replace.sh script, it will use AddDW1820A.app to automatically modify and replace S/L/E/ IO80211Family.kext and IOBluetoothFamily.kext.
-
-Wifi and Bluetooth id listed in AddDW1820A.app/Contents/Resources/Data.plist
-
-Hope this works.
-
-我发现用BrcmBluetoothInjector.kext注入蓝牙的id之后，蓝牙虽然能驱动。但是不稳定，而且会出现无法连接设备的情况，类似于注入无线网卡之后出现的没有网速的问题。
-
-在我这里，修改系统里的IO80211Family.kex和IOBluetoothFamily.kext，在里边加入你的id可以完美驱动无线网卡和蓝牙。
-
-所以，我用Python写了个小脚本，打包成了AddDW1820A.app，用来备份和修改你系统里的IO80211Family.kex和IOBluetoothFamily.kext。
-
-蓝牙id和无线id可以加入到AddDW1820A.app/Contents/Resources/Data.plist里。
-
-运行install.command来自动处理，或者运行AddDW1820A.app之后手动将IO80211Family.kex和IOBluetoothFamily.kext替换到S/L/E，然后重建缓存，修复权限。
-

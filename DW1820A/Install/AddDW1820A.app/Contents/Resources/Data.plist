@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Airport</key>
+	<array>
+		<string>14e4,43a3</string>
+	</array>
+	<key>Bluetooth</key>
+	<array>
+		<string>0a5c,6412</string>
+		<string>0a5c,6413</string>
+		<string>0a5c,6414</string>
+	</array>
+</dict>
+</plist>

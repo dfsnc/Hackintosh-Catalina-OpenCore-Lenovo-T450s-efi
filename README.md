@@ -2,6 +2,9 @@
 
 ## Notice: If you need to edit config.plist, don't use OpenCore configurator, use PlistEdit pro or Xcode instead.
 
+## If you want to install macOS with this efi, remember to disable Config.plist -> Kernel -> Block -> com.apple.driver.AppleHPET.
+## 如果你想要用这个EFI引导安装的话，请将Config.plist -> Kernel -> Block -> com.apple.driver.AppleHPET这个关掉。
+
 ## Introduction
 
 efi for Thinkpad T450s (20BXCT01WW) Hackintosh Catalina.

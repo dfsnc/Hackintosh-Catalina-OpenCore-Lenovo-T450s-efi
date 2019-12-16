@@ -1,7 +1,8 @@
 #!/bin/bash
 
 cd "${0%/*}"
-open ./Install/AddDW1820A.app
+open AddDW1820A.app
+sudo mount -uw /
 sudo rm -r /System/Library/Extensions/IO80211Family.kext
 sudo rm -r /System/Library/Extensions/IOBluetoothFamily.kext
 sudo cp -r IO80211Family.kext /System/Library/Extensions

@@ -16,19 +16,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>EH01</string>
+				<string>EHC1</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EH01.aml</string>
+				<string>SSDT-EHC1.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>XHC</string>
+				<string>XHCI</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-XHC.aml</string>
+				<string>SSDT-XHCI.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -150,6 +150,14 @@
 				<key>Path</key>
 				<string>SSDT-Thinkpad_Clickpad.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable PCI Card Reader</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-PCI0.EXP1-Disbale.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -250,78 +258,6 @@
 				<key>Replace</key>
 				<data>
 				WEJTVAQ=
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>battery BAT0:SBMN to BMNX128</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				U0JNTkA=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				AAAAAAAAAAA=
-				</data>
-				<key>Replace</key>
-				<data>
-				Qk1OWEA=
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>battery BAT0:SBDN to BDNX128</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				U0JETkA=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				AAAAAAAAAAA=
-				</data>
-				<key>Replace</key>
-				<data>
-				QkROWEA=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -589,78 +525,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>EHC1 to EH01</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RUhDMQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				AAAAAAAAAAA=
-				</data>
-				<key>Replace</key>
-				<data>
-				RUgwMQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>XHCI to XHC</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				WEhDSQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				AAAAAAAAAAA=
-				</data>
-				<key>Replace</key>
-				<data>
-				WEhDXw==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>_PTS to ZPTS(1,N)</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -860,7 +724,9 @@
 				<key>hda-idle-support</key>
 				<string>1</string>
 				<key>layout-id</key>
-				<integer>32</integer>
+				<data>
+				IAAAAA==
+				</data>
 				<key>model</key>
 				<string>Intel Wildcat Point-LP High Definition Audio Controller</string>
 				<key>name</key>
@@ -878,8 +744,6 @@
 				<data>
 				FhYAAA==
 				</data>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
@@ -928,6 +792,8 @@
 				<data>
 				AAAAgA==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
 				<string>HD Graphics 5500</string>
 				<key>name</key>
@@ -1566,7 +1432,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 darkwake=0 applbkl=1</string>
+				<string>-v debug=0x100 keepsyms=1 darkwake=0</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==

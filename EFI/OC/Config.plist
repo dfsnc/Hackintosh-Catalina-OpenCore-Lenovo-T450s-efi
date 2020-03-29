@@ -1577,7 +1577,6 @@
 			<string>HFSPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>AppleUsbKbDxe.efi</string>
 		</array>
 		<key>Audio</key>
 		<dict>

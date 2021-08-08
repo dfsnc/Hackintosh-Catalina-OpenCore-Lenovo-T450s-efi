@@ -4,5 +4,5 @@
 MNT="/Volumes/EFITest"
 
 dot_clean .
-rm -rf "${MNT}/EFI"
-cp -r ./EFI $MNT
+rsync --progress -r -u ./EFI/* "${MNT}/EFI"
+# cp -r -u ./EFI/* "${MNT}/EFI"
